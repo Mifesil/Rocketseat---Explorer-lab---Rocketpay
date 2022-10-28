@@ -105,7 +105,7 @@
           <span><img src="/cc-icon.svg" alt="ícone padrão de cartão" /></span>
           <span
             ><img
-              src="/cc-visa.svg"
+              src="/cc-default.svg"
               alt="ícone do cartão de crédito selecionado"
           /></span>
         </div>
@@ -124,7 +124,7 @@
               <div class="value">02/32</div>
             </div>
             <div class="cc-security">
-              <div class="label">CVC</div>
+              <div class="label">CVV</div>
               <div class="value">123</div>
             </div>
             <img src="/cc-chip.svg" alt="ícone de chip de cartão de crédito" />
@@ -140,7 +140,7 @@
 
         <div class="input-wrapper">
           <label for="card-holder">Nome do titular</label>
-          <input id="card-holder" />
+          <input id="card-holder" maxlength="30" />
         </div>
 
         <div class="flex">
@@ -150,12 +150,12 @@
           </div>
 
           <div class="input-wrapper">
-            <label for="security-code">CVC</label>
+            <label for="security-code">CVV</label>
             <input id="security-code" />
           </div>
         </div>
 
-        <button>ADICIONAR CARTÃO</button>
+        <button id="add-card">ADICIONAR CARTÃO</button>
       </form>
     </div>
 
